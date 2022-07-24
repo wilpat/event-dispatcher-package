@@ -23,14 +23,24 @@
     "require": {
         "php": "^8.0"
     },
+    "scripts": {
+        "analyze": "./vendor/bin/psalm --show-info=true",
+        "test": "./vendor/bin/pest",
+        "test-coverage": "./vendor/bin/pest --coverage"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true,
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "require-dev": {
+        "pestphp/pest": "^1.21",
+        "spatie/ray": "^1.34",
         "vimeo/psalm": "^4.24"
     }
 }

@@ -1,0 +1,36 @@
+{
+    "name": "shopceed/api-library",
+    "description": "An API library for sending card events to the shopolytics server",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shopceed\\ApiLibrary\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shopceed\\ApiLibrary\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "role": "Author",
+            "name": "William Okafor",
+            "email": "wilpat456@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.24"
+    }
+}
